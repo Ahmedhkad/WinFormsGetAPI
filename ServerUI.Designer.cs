@@ -39,16 +39,20 @@
             respondTextBox = new RichTextBox();
             respondLabel = new Label();
             buttonGetHttp = new Button();
+            buttonStartLIsten = new Button();
+            buttonStopListning = new Button();
+            dataGridView = new DataGridView();
             appTitle = new Label();
             statusStrip1.SuspendLayout();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
             SuspendLayout();
             // 
             // appTitle
             // 
             appTitle.AutoSize = true;
             appTitle.Font = new Font("Segoe UI", 14F);
-            appTitle.Location = new Point(230, 30);
+            appTitle.Location = new Point(42, 24);
             appTitle.Name = "appTitle";
             appTitle.Size = new Size(164, 25);
             appTitle.TabIndex = 2;
@@ -57,7 +61,7 @@
             // statusStrip1
             // 
             statusStrip1.Items.AddRange(new ToolStripItem[] { StatusLabelDown });
-            statusStrip1.Location = new Point(0, 265);
+            statusStrip1.Location = new Point(0, 565);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Padding = new Padding(1, 0, 16, 0);
             statusStrip1.Size = new Size(664, 22);
@@ -127,11 +131,45 @@
             buttonGetHttp.UseVisualStyleBackColor = true;
             buttonGetHttp.Click += buttonGetHttp_Click;
             // 
+            // buttonStartLIsten
+            // 
+            buttonStartLIsten.Location = new Point(278, 24);
+            buttonStartLIsten.Name = "buttonStartLIsten";
+            buttonStartLIsten.Size = new Size(138, 28);
+            buttonStartLIsten.TabIndex = 6;
+            buttonStartLIsten.Text = "Start Listen";
+            buttonStartLIsten.UseVisualStyleBackColor = true;
+            buttonStartLIsten.Click += buttonStartLIsten_Click;
+            // 
+            // buttonStopListning
+            // 
+            buttonStopListning.FlatStyle = FlatStyle.System;
+            buttonStopListning.Location = new Point(422, 26);
+            buttonStopListning.Name = "buttonStopListning";
+            buttonStopListning.Size = new Size(121, 26);
+            buttonStopListning.TabIndex = 7;
+            buttonStopListning.Text = "Stop Listining";
+            buttonStopListning.UseVisualStyleBackColor = true;
+            buttonStopListning.Click += buttonStopListning_Click;
+            // 
+            // dataGridView
+            // 
+            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView.Location = new Point(42, 287);
+            dataGridView.Name = "dataGridView";
+            dataGridView.Size = new Size(580, 209);
+            dataGridView.TabIndex = 8;
+            // 
             // ServerUI
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(664, 287);
+            ClientSize = new Size(664, 587);
+            Controls.Add(dataGridView);
+            Controls.Add(buttonStopListning);
+            Controls.Add(buttonStartLIsten);
             Controls.Add(buttonGetHttp);
             Controls.Add(respondLabel);
             Controls.Add(respondTextBox);
@@ -148,6 +186,7 @@
             statusStrip1.PerformLayout();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -164,5 +203,8 @@
         private RichTextBox respondTextBox;
         private Label respondLabel;
         private Button buttonGetHttp;
+        private Button buttonStartLIsten;
+        private Button buttonStopListning;
+        private DataGridView dataGridView;
     }
 }

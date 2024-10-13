@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsClassTest", "WinFor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerLibrary", "..\ServerLibrary\ServerLibrary.csproj", "{1F0FFF96-6AAF-491E-8D7F-763546F86C42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerListenLibarary", "..\ServerListenLibarary\ServerListenLibarary.csproj", "{8992FF5E-824F-454A-A61B-5CBFD744CED7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1F0FFF96-6AAF-491E-8D7F-763546F86C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F0FFF96-6AAF-491E-8D7F-763546F86C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F0FFF96-6AAF-491E-8D7F-763546F86C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8992FF5E-824F-454A-A61B-5CBFD744CED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8992FF5E-824F-454A-A61B-5CBFD744CED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8992FF5E-824F-454A-A61B-5CBFD744CED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8992FF5E-824F-454A-A61B-5CBFD744CED7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
